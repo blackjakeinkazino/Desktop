@@ -1,0 +1,38 @@
+﻿<Window x:Class="Todo_new.registration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Todo_new"
+    mc:Ignorable="d"
+    Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Зарегестироваться" HorizontalAlignment="Left" Margin="451,336,0,0" FontSize="16" Background="#FFF64646" Foreground="White" BorderThickness="0"  VerticalAlignment="Top" Click="Button_Click_2" Width="280" Height="40">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10, 10, 3, 3"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="451,381,0,0" FontSize="16" Background="#FFF64646" Foreground="White" BorderThickness="0"  VerticalAlignment="Top" Click="Button_Click_1" Height="43" Width="280">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="3, 3, 10, 10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="134" Margin="73,39,0,0" VerticalAlignment="Top" Width="138" Source="/Снимок экрана 2025-09-29 103432.png"/>
+        <Label Content="Welcome Back!" HorizontalAlignment="Left" Margin="451,27,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="mail" Content="Ваша почта" HorizontalAlignment="Left" Margin="451,134,0,0" VerticalAlignment="Top" FontSize="16" Padding="0,5,5,5"/>
+        <Label x:Name="password_again" Content="Повторите пароль" HorizontalAlignment="Left" Margin="451,258,0,0" VerticalAlignment="Top" Width="140" FontSize="16" Padding="0,5,5,5"/>
+        <Label x:Name="password" Content="Пароль" HorizontalAlignment="Left" Margin="451,197,0,0" VerticalAlignment="Top" FontSize="16" Padding="0,5,5,5"/>
+        <Label x:Name="name" Content="Имя пользователя" HorizontalAlignment="Left"  Margin="451,74,0,0" VerticalAlignment="Top" Width="140" FontSize="16" Padding="0,5,5,5"/>
+
+
+        <TextBox x:Name="input_pass_again" TextWrapping="Wrap" Text="Введите пароль" Margin="451,293,81,116" BorderThickness="0,0,0,1" Foreground="Gray" />
+        <TextBox x:Name="input_mail" TextWrapping="Wrap" Text="exam@yandex.ru" Margin="451,167,81,242" BorderThickness="0,0,0,1" Foreground="Gray" />
+        <TextBox x:Name="input_name" TextWrapping="Wrap" Text="Введите имя пользователя" Margin="451,109,81,300" BorderThickness="0,0,0,1" Foreground="Gray" />
+        <TextBox x:Name="input_pass" TextWrapping="Wrap" Text="Введите пароль" Margin="451,233,31,176" BorderThickness="0,0,0,1" Foreground="Gray" />
+
+    </Grid>
+</Window>
